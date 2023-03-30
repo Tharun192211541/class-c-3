@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+void natural()
+{
+	char str[40];
+	int n;
+	printf("enter the size of string");
+	scanf("%d",&n);
+	printf("enter the string");
+	scanf("%s",&str);
+	printf("%s",strrev(str));
+
+}
+int main()
+{
+	natural();
+}
