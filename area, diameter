@@ -1,0 +1,14 @@
+#include<stdio.h>
+void multiply()
+{
+	float r;
+	float pi=3.14;
+	scanf("%f",&r);
+ 	printf("\nthe diameter is %f",2*r);
+ 	printf("\ncircumference=%f",2*pi*r);
+ 	printf("\narea=%f",pi*r*r);
+}
+ int main()
+{
+	multiply();
+}
