@@ -1,0 +1,59 @@
+#include<stdio.h>
+void amstrong()
+{
+	int num,mul,rem,sum=0,temp;
+	printf("enter the number to check amstrong:");
+	scanf("%d",&num);
+	num=temp;
+	while(num>0)
+	{
+	rem=num%10;
+	sum=sum+rem*rem*rem;
+	num=num/10;
+    }
+    if(sum==temp)
+    printf("amstrong");
+    else 
+    printf("not amstrong");
+}
+void perfect()
+{
+	int num,temp,sum=0,rem;
+	printf("\nenter the to check perfect or not :");
+	scanf("%d",&num);
+	temp=num;
+	while(num>0)
+	{
+	rem=num%10;
+	sum=sum+rem;
+	num=num/10;
+    }
+    if(sum==temp)
+    printf("perfect number");
+    else 
+    printf("not a perfect numnber");	
+}
+void prime()
+{
+	printf("\nenter a number to prime or not:");
+	int n,i;
+	int count=0;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		if(n%i==0)
+		{
+			count++;
+		}
+	}
+	if(count==2)
+	printf("prime number");
+	else 
+	printf("not a prime number");
+}
+ int main()
+{
+	amstrong();
+	perfect();
+	prime();
+}
